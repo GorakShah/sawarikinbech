@@ -10,10 +10,10 @@ class Videos extends React.Component{
             <div className='videos'>
                <h1>Videos</h1>
              <div className='whole-component3'>
-                      
+
                <div className='whole-content3'>
                    <iframe
-                        src="https://www.youtube.com/embed/qZLkVmhCW-M"
+                        src="https://www.youtube.com/embed/spCdFMnQ1Fk"
                         width="650px"
                         height="250"
                         allowFullScreen
@@ -22,13 +22,13 @@ class Videos extends React.Component{
                         display="initial"
                         position="relative"
                      />
-               
+
                </div>
-                 
-            
+
+
                <div className='whole-content3'>
                <iframe
-                    src="https://www.youtube.com/embed/qZLkVmhCW-M"
+                    src="https://www.youtube.com/embed/spCdFMnQ1Fk"
                     width="650px"
                     height="250"
                     allowFullScreen
@@ -37,12 +37,12 @@ class Videos extends React.Component{
                     display="initial"
                     position="relative"
                  />
-           
+
            </div>
 
            <div className='whole-content3'>
            <iframe
-                src="https://www.youtube.com/embed/qZLkVmhCW-M"
+                src="https://www.youtube.com/embed/spCdFMnQ1Fk"
                 width="650px"
                 height="250"
                 allowFullScreen
@@ -51,7 +51,7 @@ class Videos extends React.Component{
                 display="initial"
                 position="relative"
              />
-       
+
        </div>
 
 
@@ -59,7 +59,7 @@ class Videos extends React.Component{
 
        <div className='whole-content3'>
                    <iframe
-                        src="https://www.youtube.com/embed/qZLkVmhCW-M"
+                        src="https://www.youtube.com/embed/spCdFMnQ1Fk"
                         width="650px"
                         height="250"
                         allowFullScreen
@@ -68,14 +68,14 @@ class Videos extends React.Component{
                         display="initial"
                         position="relative"
                      />
-               
+
                </div>
 
-         
+
                </div>
-   
+
             </div>
-                
+
         )
     }
 }
