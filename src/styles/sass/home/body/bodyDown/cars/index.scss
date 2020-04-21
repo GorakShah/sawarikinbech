@@ -1,0 +1,39 @@
+.cars{
+    height: 200px;
+    width: 97%;
+    border: 1px rgb(220, 220, 220) solid;
+    margin: 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding: 10px;
+    margin: 5px;
+   
+ 
+    .s2{
+        font-size: 25px;
+        margin-left: 12px;
+       
+    }
+   .s3{
+      font-size: 20px;
+      margin: 15px;
+   }
+
+    .latest-cars{
+        
+        width: 100%;
+        height: 80%;
+        overflow-x:scroll;
+        display: flex;
+        
+        
+        img{
+            
+            height: 140px;
+            min-width: 200px;
+            border: 1px rgb(220, 220, 220) solid;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    }
+}

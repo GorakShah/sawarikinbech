@@ -1,0 +1,39 @@
+.bikes{
+    height: 200px;
+    width: 97%;
+    border: 1px rgb(220, 220, 220) solid;
+    margin: 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding: 10px;
+    margin: 5px;
+   
+
+    .s4{
+        font-size: 25px;
+        margin-left: 12px;
+       
+    }
+   .s5{
+      font-size: 20px;
+      margin: 15px;
+   }
+
+    .popular-bikes{
+        
+        width: 100%;
+        height: 140px;
+        overflow-x:scroll;
+        display: flex;
+        
+        
+        img{
+            
+            height: 140px;
+           min-width: 180px;
+            border: 1px rgb(220, 220, 220) solid;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    }
+}

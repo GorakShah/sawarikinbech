@@ -1,0 +1,28 @@
+.searchBox{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inputBox{
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .button-submit{
+        height: 38px;
+        width: 55px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button-login{
+            height: 32px;
+            width: 47px;
+            margin: 0;
+        }
+    }
+}

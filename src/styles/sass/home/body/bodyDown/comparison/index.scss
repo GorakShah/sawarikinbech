@@ -1,0 +1,62 @@
+
+.compare{
+   min-width:10px;
+   min-height: 10px;
+    padding:10px;
+    border: 1px rgb(220, 220, 220) solid;
+    margin: 10px;
+    
+    .title{
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .all-in-one{
+
+        display: flex;
+    .whole-content{
+        height:190px ;
+        width:300px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: 1px rgb(220, 220, 220) solid;
+
+        
+
+       .two-image{
+           display: flex;
+           margin: 5px;
+
+        img{
+            height: 150px;
+            width: 150px;
+           }
+
+       }
+       .sp33{
+           margin: 25px;
+       }
+       .price{
+         height: auto;
+         width: 300px;
+         display: flex; 
+         margin-left: 0px;
+         border: 1px red solid;
+         justify-content: space-around;
+         
+         .sp44{
+           
+           color: green;
+        }
+        .sp45{
+            
+            color: green;
+        }
+       }
+    }
+  }     
+}

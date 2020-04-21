@@ -1,0 +1,9 @@
+@import './bodyUp/index.scss';
+@import './bodyDown/index.scss';
+
+.body{
+    
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+}

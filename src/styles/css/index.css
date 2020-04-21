@@ -1,0 +1,544 @@
+.logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 65px;
+  width: 90px;
+}
+
+.login {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.login img {
+  height: 30px;
+  width: 70px;
+}
+.login .register {
+  font-size: 20px;
+}
+
+.searchBox {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox .inputBox {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.searchBox .button-submit {
+  height: 38px;
+  width: 55px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox .button-submit .button-login {
+  height: 32px;
+  width: 47px;
+  margin: 0;
+}
+
+.top-part {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.mainmenu {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: black;
+  font-size: 20px;
+  border-top: #f0f0f0 1px solid;
+}
+
+.header {
+  width: 100%;
+  height: 110px;
+  margin: 0px;
+  color: black;
+}
+
+.sideBar {
+  width: 350px;
+  height: 400px;
+  background: white;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.sideBar h2 {
+  margin-left: 45px;
+}
+.sideBar .button-menu {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.sideBar .button-menu .buttonNew {
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.sideBar .button-menu .buttonUsed {
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.sideBar .radio-button {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+.sideBar .select-type {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sideBar .select-type .selectA {
+  height: 40px;
+  width: 90%;
+  margin: 10px;
+  font-size: 15px;
+}
+.sideBar .select-type .selectB {
+  height: 40px;
+  width: 90%;
+  margin: 10px;
+  font-size: 15px;
+}
+.sideBar .search {
+  height: 40px;
+  width: 90%;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  background: black;
+  color: white;
+  margin: 10px;
+}
+
+.bodyUp {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.carBrand {
+  height: 200px;
+  width: 97%;
+  border: 1px gainsboro solid;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+.carBrand .span1 {
+  font-size: 25px;
+}
+.carBrand .popular-car-brand {
+  width: 100%;
+  height: 140px;
+  overflow-x: scroll;
+  display: flex;
+}
+.carBrand .popular-car-brand img {
+  height: 120px;
+  min-width: 140px;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.bikeBrand {
+  height: 200px;
+  width: 97%;
+  border: 1px gainsboro solid;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+.bikeBrand .span2 {
+  font-size: 25px;
+}
+.bikeBrand .popular-bike-brand {
+  width: 100%;
+  height: 140px;
+  overflow-x: scroll;
+  display: flex;
+}
+.bikeBrand .popular-bike-brand img {
+  height: 120px;
+  min-width: 140px;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.cars {
+  height: 200px;
+  width: 97%;
+  border: 1px gainsboro solid;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+.cars .s2 {
+  font-size: 25px;
+  margin-left: 12px;
+}
+.cars .s3 {
+  font-size: 20px;
+  margin: 15px;
+}
+.cars .latest-cars {
+  width: 100%;
+  height: 80%;
+  overflow-x: scroll;
+  display: flex;
+}
+.cars .latest-cars img {
+  height: 140px;
+  min-width: 200px;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.bikes {
+  height: 200px;
+  width: 97%;
+  border: 1px gainsboro solid;
+  margin: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding: 10px;
+  margin: 5px;
+}
+.bikes .s4 {
+  font-size: 25px;
+  margin-left: 12px;
+}
+.bikes .s5 {
+  font-size: 20px;
+  margin: 15px;
+}
+.bikes .popular-bikes {
+  width: 100%;
+  height: 140px;
+  overflow-x: scroll;
+  display: flex;
+}
+.bikes .popular-bikes img {
+  height: 140px;
+  min-width: 180px;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.leftPart {
+  height: 100%;
+  width: 70%;
+}
+.leftPart .s2 {
+  font-size: 25px;
+  margin: 5px;
+}
+.leftPart .s3 {
+  font-size: 15px;
+  margin: 10px;
+}
+.leftPart .state-pics {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.leftPart .state-pics .a11 {
+  height: 190px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px gainsboro solid;
+  margin: 5px;
+}
+.leftPart .state-pics .a11 img {
+  height: 70%;
+  width: 80%;
+  border-radius: 50%;
+}
+.leftPart .state-pics .a11 .l11 {
+  font-size: 10px;
+}
+
+.rightPart {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  border-left: 3px gainsboro solid;
+  border-width: 10px;
+}
+.rightPart .right-button {
+  margin: 20px;
+  height: 40px;
+  width: 200px;
+  position: relative;
+  font-size: 15px;
+}
+
+.usedOne {
+  height: 600px;
+  width: 97%;
+  display: flex;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.compare {
+  min-width: 10px;
+  min-height: 10px;
+  padding: 10px;
+  border: 1px gainsboro solid;
+  margin: 10px;
+}
+.compare .title {
+  margin: 10px;
+  font-size: 25px;
+}
+.compare .all-in-one {
+  display: flex;
+}
+.compare .all-in-one .whole-content {
+  height: 190px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px gainsboro solid;
+}
+.compare .all-in-one .whole-content .two-image {
+  display: flex;
+  margin: 5px;
+}
+.compare .all-in-one .whole-content .two-image img {
+  height: 150px;
+  width: 150px;
+}
+.compare .all-in-one .whole-content .sp33 {
+  margin: 25px;
+}
+.compare .all-in-one .whole-content .price {
+  height: auto;
+  width: 300px;
+  display: flex;
+  margin-left: 0px;
+  border: 1px red solid;
+  justify-content: space-around;
+}
+.compare .all-in-one .whole-content .price .sp44 {
+  color: green;
+}
+.compare .all-in-one .whole-content .price .sp45 {
+  color: green;
+}
+
+.compare {
+  min-width: 10px;
+  min-height: 10px;
+  padding: 10px;
+  border: 1px gainsboro solid;
+  margin: 40px;
+}
+.compare .title {
+  margin: 10px;
+  font-size: 25px;
+}
+.compare .all-in-one {
+  margin: 20px;
+  display: flex;
+}
+.compare .all-in-one .whole-content {
+  height: 190px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px gainsboro solid;
+}
+.compare .all-in-one .whole-content .two-image {
+  display: flex;
+  margin: 5px;
+}
+.compare .all-in-one .whole-content .two-image img {
+  height: 150px;
+  width: 150px;
+}
+.compare .all-in-one .whole-content .sp33 {
+  margin: 25px;
+}
+.compare .all-in-one .whole-content .price {
+  height: auto;
+  width: 300px;
+  display: flex;
+  margin-left: 0px;
+  border: 1px red solid;
+  justify-content: space-around;
+}
+.compare .all-in-one .whole-content .price .sp44 {
+  color: green;
+}
+.compare .all-in-one .whole-content .price .sp45 {
+  color: green;
+}
+
+.newsA {
+  width: 90%;
+  height: 700px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  border: 1px gainsboro solid;
+}
+.newsA .whole-component {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  flex-wrap: wrap;
+}
+.newsA .whole-component .whole-content {
+  width: 600px;
+  height: 300px;
+  background: gainsboro;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.newsA .whole-component .whole-content img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+.newsA .whole-component .whole-content .psp1 {
+  display: flex;
+  flex-direction: column;
+}
+.newsA .whole-component .whole-content .psp1 .sp66 {
+  font-size: 25px;
+}
+.newsA .whole-component .whole-content .psp1 .sp67 {
+  font-size: 10px;
+}
+.newsA .whole-component .whole-content .psp1 .sp68 {
+  font-size: 15px;
+}
+
+.videos {
+  width: 90%;
+  height: 700px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+  border: 1px gainsboro solid;
+}
+.videos .whole-component3 {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  flex-wrap: wrap;
+}
+.videos .whole-component3 .whole-content3 {
+  width: 600px;
+  height: 300px;
+  background: gainsboro;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.videos .whole-component3 .whole-content3 .psp3 {
+  display: flex;
+  flex-direction: column;
+}
+.videos .whole-component3 .whole-content3 .psp3 .sp76 {
+  font-size: 25px;
+}
+
+.bodyDown {
+  width: 100%;
+  height: auto;
+  padding-right: 5px;
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+}
+
+.body-footer {
+  overflow: auto;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,49 @@
+
+.leftPart{
+    height: 100%;
+    width: 70%;
+    
+    .s2{
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .s3{
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .state-pics{
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    
+        
+
+        .a11{
+            height: 190px;
+            width: 160px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 5px;
+            border: 1px rgb(220, 220, 220) solid;
+            margin: 5px;
+
+            img{
+                height: 70%;
+                width: 80%;
+                border-radius: 50%;
+
+            }
+            .l11{
+                font-size: 10px;
+            }
+        }
+    }
+
+}
