@@ -1,5 +1,7 @@
 import React from 'react';
+import { Card } from '@blueprintjs/core';
 import Corolla from './sz1.jpg';
+
 
 
 
@@ -11,7 +13,7 @@ class Videos extends React.Component{
                <h1>Videos</h1>
              <div className='whole-component3'>
 
-               <div className='whole-content3'>
+               <Card interactive style={{ padding: 10, margin: 10}}>
                    <iframe
                         src="https://www.youtube.com/embed/spCdFMnQ1Fk"
                         width="650px"
@@ -23,7 +25,7 @@ class Videos extends React.Component{
                         position="relative"
                      />
 
-               </div>
+               </Card>
 
 
                <div className='whole-content3'>
@@ -53,8 +55,6 @@ class Videos extends React.Component{
              />
 
        </div>
-
-
 
 
        <div className='whole-content3'>
