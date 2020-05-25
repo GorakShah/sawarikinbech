@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SideBar extends React.Component{
 
@@ -35,7 +36,9 @@ class SideBar extends React.Component{
                     </select>
             </div>
             
-            <button type='submit' className='search'>Search</button>
+            <Link to='/footer' >
+             <button type='submit' className='search'>Search</button>
+            </Link>
         </div>
         )
     }

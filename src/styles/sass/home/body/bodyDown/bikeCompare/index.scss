@@ -1,63 +1,113 @@
 
-.compare{
-    min-width:10px;
-    min-height: 10px;
+
+.bike-compare{
+    width:95%;
+    height: 300px;
      padding:10px;
      border: 1px rgb(220, 220, 220) solid;
-     margin: 40px;
+     margin: 10px;
+     border-radius: 5px;
      
      .title{
          margin: 10px;
          font-size: 25px;
-         
      }
  
-     .all-in-one{
-          margin: 20px;
+     .two-one{
+ 
+         
+         height: 250px;
+         width: 100%;
          display: flex;
-     .whole-content{
-         height:190px ;
-         width:300px ;
-         display: flex;
-         justify-content: center;
          align-items: center;
-         flex-direction: column;
-         margin-left: 10px;
-         border-radius: 10px;
-         border: 1px rgb(220, 220, 220) solid;
- 
          
+         border-radius: 5px;
+         overflow-x: scroll;
+         
+       .both-content{
+           height: 200px;
+           width: 400px;
+           display: flex;
+           border-radius: 5px;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           border: 1px rgb(220, 220, 220) solid;
+           margin: 5px;
+           
  
-        .two-image{
-            display: flex;
-            margin: 5px;
- 
-         img{
-             height: 150px;
-             width: 150px;
-            }
- 
-        }
-        .sp33{
-            margin: 25px;
-        }
-        .price{
-          height: auto;
-          width: 300px;
-          display: flex; 
-          margin-left: 0px;
-          border: 1px red solid;
-          justify-content: space-around;
-          
-          .sp44{
-            
-            color: green;
-         }
-         .sp45{
+           .img-content{
+               height: 130px;
+               width:400px ;
+               position: relative;
+               display: flex;
+               border-radius: 5px;
+                background: springgreen;
+               .left-img{
+                 height: 130px;
+                 width:200px ;
+                 background: yellowgreen;
+                 img{
+                     height: 100%;
+                     width: 100%;
+                 }
+             }
+             .vs{
+                 height: 130px;
+                 width: 400px;
              
-             color: green;
-         }
-        }
-     }
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 position: absolute;
+             
+                 .child-vs{
+                     height: 30px;
+                     width: 30px;
+                     background: black;
+                     border-radius: 100%;
+                     color: white;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                 }
+ 
+             }
+             .right-img{
+                 height: 130px;
+                 width: 200px;
+                 
+ 
+                 img{
+                     height: 100%;
+                     width: 100%;
+                 }
+             }
+           }
+          .spans{
+              
+              width: 400px;
+              height: 70px;
+ 
+              .names{
+                 width:400px ;
+                 height:35px ;
+                 
+                 display: flex;
+                 justify-content: space-around;
+                 border-bottom: 1px rgb(220, 220, 220) solid;
+                 ;
+ 
+              }
+              .prices{
+                 width: 400px;
+                 height: 35px;
+                 
+                 display: flex;
+                 justify-content: space-around;
+                 color: green;
+              }
+          }
+       }
    }     
  }

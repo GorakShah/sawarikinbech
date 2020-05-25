@@ -19,14 +19,25 @@
         overflow-x:scroll;
         display: flex;
         
+        .whole-content{
         
-        img{
-            
-            height: 120px;
-           min-width: 140px;
-            border: 1px rgb(220, 220, 220) solid;
+            height: 130px;
+            width: 180px;
+            margin: 3px;
             border-radius: 5px;
-            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border:  1px rgb(220, 220, 220) solid;
+
+
+            img{
+                height: 60px;
+                width: 50px;
+                margin-bottom:10px ;
+            }
         }
+       
     }
 }

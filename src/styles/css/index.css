@@ -69,6 +69,27 @@
   font-size: 20px;
   border-top: #f0f0f0 1px solid;
 }
+.mainmenu span:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.all-lists {
+  height: auto;
+  width: auto;
+  border: #f0f0f0 1px solid;
+  border-radius: 5px;
+}
+.all-lists .list1 {
+  height: 40px;
+  width: 240px;
+  padding: 10px;
+  border-bottom: #f0f0f0 1px solid;
+  cursor: pointer;
+}
+.all-lists .list1:hover {
+  background: #f0f0f0;
+}
 
 .header {
   width: 100%;
@@ -169,12 +190,21 @@
   overflow-x: scroll;
   display: flex;
 }
-.carBrand .popular-car-brand img {
-  height: 120px;
-  min-width: 140px;
-  border: 1px gainsboro solid;
+.carBrand .popular-car-brand .whole-content {
+  height: 130px;
+  width: 180px;
+  margin: 3px;
   border-radius: 5px;
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.carBrand .popular-car-brand .whole-content img {
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .bikeBrand {
@@ -196,16 +226,25 @@
   overflow-x: scroll;
   display: flex;
 }
-.bikeBrand .popular-bike-brand img {
-  height: 120px;
-  min-width: 140px;
-  border: 1px gainsboro solid;
+.bikeBrand .popular-bike-brand .whole-content {
+  height: 130px;
+  width: 180px;
+  margin: 3px;
   border-radius: 5px;
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.bikeBrand .popular-bike-brand .whole-content img {
+  height: 60px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .cars {
-  height: 200px;
+  height: 280px;
   width: 97%;
   border: 1px gainsboro solid;
   margin: 10px;
@@ -224,20 +263,32 @@
 }
 .cars .latest-cars {
   width: 100%;
-  height: 80%;
+  height: 150px;
   overflow-x: scroll;
   display: flex;
 }
-.cars .latest-cars img {
+.cars .latest-cars .vehicle-content {
   height: 140px;
-  min-width: 200px;
-  border: 1px gainsboro solid;
+  width: 180px;
+  margin: 3px;
   border-radius: 5px;
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.cars .latest-cars .vehicle-content img {
+  height: 80px;
+  width: 160px;
+  margin-bottom: 10px;
+}
+.cars .latest-cars .vehicle-content #s1 {
+  color: green;
 }
 
 .bikes {
-  height: 200px;
+  height: 280px;
   width: 97%;
   border: 1px gainsboro solid;
   margin: 10px;
@@ -256,16 +307,28 @@
 }
 .bikes .popular-bikes {
   width: 100%;
-  height: 140px;
+  height: 150px;
   overflow-x: scroll;
   display: flex;
 }
-.bikes .popular-bikes img {
+.bikes .popular-bikes .vehicle-content {
   height: 140px;
-  min-width: 180px;
-  border: 1px gainsboro solid;
+  width: 180px;
+  margin: 3px;
   border-radius: 5px;
-  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px gainsboro solid;
+}
+.bikes .popular-bikes .vehicle-content img {
+  height: 80px;
+  width: 160px;
+  margin-bottom: 10px;
+}
+.bikes .popular-bikes .vehicle-content #s1 {
+  color: green;
 }
 
 .leftPart {
@@ -276,35 +339,32 @@
   font-size: 25px;
   margin: 5px;
 }
-.leftPart .s3 {
-  font-size: 15px;
-  margin: 10px;
-}
 .leftPart .state-pics {
-  height: 100%;
-  width: auto;
+  height: 300px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: start;
+  align-items: center;
   padding: 30px;
 }
-.leftPart .state-pics .a11 {
-  height: 190px;
-  width: 160px;
+.leftPart .state-pics .all-content {
+  height: 180px;
+  width: 190px;
+  margin: 3px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
   border: 1px gainsboro solid;
-  margin: 5px;
+  border-radius: 5px;
 }
-.leftPart .state-pics .a11 img {
-  height: 70%;
-  width: 80%;
-  border-radius: 50%;
-}
-.leftPart .state-pics .a11 .l11 {
-  font-size: 10px;
+.leftPart .state-pics .all-content img {
+  height: 120px;
+  width: 150px;
+  border-radius: 100%;
 }
 
 .rightPart {
@@ -335,188 +395,254 @@
   margin: 15px;
 }
 
-.compare {
-  min-width: 10px;
-  min-height: 10px;
+.car-compare {
+  width: 95%;
+  height: 300px;
   padding: 10px;
   border: 1px gainsboro solid;
   margin: 10px;
+  border-radius: 5px;
 }
-.compare .title {
+.car-compare .title {
   margin: 10px;
   font-size: 25px;
 }
-.compare .all-in-one {
+.car-compare .all-one {
+  height: 250px;
+  width: 100%;
   display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow-x: scroll;
 }
-.compare .all-in-one .whole-content {
-  height: 190px;
-  width: 300px;
+.car-compare .all-one .both-content {
+  height: 200px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
   flex-direction: column;
-  margin-left: 10px;
-  border-radius: 10px;
   border: 1px gainsboro solid;
-}
-.compare .all-in-one .whole-content .two-image {
-  display: flex;
   margin: 5px;
 }
-.compare .all-in-one .whole-content .two-image img {
-  height: 150px;
-  width: 150px;
-}
-.compare .all-in-one .whole-content .sp33 {
-  margin: 25px;
-}
-.compare .all-in-one .whole-content .price {
-  height: auto;
-  width: 300px;
+.car-compare .all-one .both-content .img-content {
+  height: 130px;
+  width: 400px;
+  position: relative;
   display: flex;
-  margin-left: 0px;
-  border: 1px red solid;
+  border-radius: 5px;
+}
+.car-compare .all-one .both-content .img-content .left-img {
+  height: 130px;
+  width: 200px;
+  background: yellowgreen;
+}
+.car-compare .all-one .both-content .img-content .left-img img {
+  height: 100%;
+  width: 100%;
+}
+.car-compare .all-one .both-content .img-content .vs {
+  height: 130px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.car-compare .all-one .both-content .img-content .vs .child-vs {
+  height: 30px;
+  width: 30px;
+  background: black;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-compare .all-one .both-content .img-content .right-img {
+  height: 130px;
+  width: 200px;
+}
+.car-compare .all-one .both-content .img-content .right-img img {
+  height: 100%;
+  width: 100%;
+}
+.car-compare .all-one .both-content .spans {
+  width: 400px;
+  height: 70px;
+}
+.car-compare .all-one .both-content .spans .names {
+  width: 400px;
+  height: 35px;
+  display: flex;
   justify-content: space-around;
+  border-bottom: 1px gainsboro solid;
 }
-.compare .all-in-one .whole-content .price .sp44 {
-  color: green;
-}
-.compare .all-in-one .whole-content .price .sp45 {
+.car-compare .all-one .both-content .spans .prices {
+  width: 400px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
   color: green;
 }
 
-.compare {
-  min-width: 10px;
-  min-height: 10px;
+.bike-compare {
+  width: 95%;
+  height: 300px;
   padding: 10px;
   border: 1px gainsboro solid;
-  margin: 40px;
+  margin: 10px;
+  border-radius: 5px;
 }
-.compare .title {
+.bike-compare .title {
   margin: 10px;
   font-size: 25px;
 }
-.compare .all-in-one {
-  margin: 20px;
+.bike-compare .two-one {
+  height: 250px;
+  width: 100%;
   display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow-x: scroll;
 }
-.compare .all-in-one .whole-content {
-  height: 190px;
-  width: 300px;
+.bike-compare .two-one .both-content {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px gainsboro solid;
+  margin: 5px;
+}
+.bike-compare .two-one .both-content .img-content {
+  height: 130px;
+  width: 400px;
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  background: springgreen;
+}
+.bike-compare .two-one .both-content .img-content .left-img {
+  height: 130px;
+  width: 200px;
+  background: yellowgreen;
+}
+.bike-compare .two-one .both-content .img-content .left-img img {
+  height: 100%;
+  width: 100%;
+}
+.bike-compare .two-one .both-content .img-content .vs {
+  height: 130px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.bike-compare .two-one .both-content .img-content .vs .child-vs {
+  height: 30px;
+  width: 30px;
+  background: black;
+  border-radius: 100%;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-left: 10px;
-  border-radius: 10px;
-  border: 1px gainsboro solid;
 }
-.compare .all-in-one .whole-content .two-image {
+.bike-compare .two-one .both-content .img-content .right-img {
+  height: 130px;
+  width: 200px;
+}
+.bike-compare .two-one .both-content .img-content .right-img img {
+  height: 100%;
+  width: 100%;
+}
+.bike-compare .two-one .both-content .spans {
+  width: 400px;
+  height: 70px;
+}
+.bike-compare .two-one .both-content .spans .names {
+  width: 400px;
+  height: 35px;
   display: flex;
-  margin: 5px;
-}
-.compare .all-in-one .whole-content .two-image img {
-  height: 150px;
-  width: 150px;
-}
-.compare .all-in-one .whole-content .sp33 {
-  margin: 25px;
-}
-.compare .all-in-one .whole-content .price {
-  height: auto;
-  width: 300px;
-  display: flex;
-  margin-left: 0px;
-  border: 1px red solid;
   justify-content: space-around;
+  border-bottom: 1px gainsboro solid;
 }
-.compare .all-in-one .whole-content .price .sp44 {
-  color: green;
-}
-.compare .all-in-one .whole-content .price .sp45 {
+.bike-compare .two-one .both-content .spans .prices {
+  width: 400px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
   color: green;
 }
 
 .newsA {
-  width: 90%;
+  width: 95%;
   height: 700px;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
-  display: flex;
-  overflow: auto;
-  flex-wrap: wrap;
   border: 1px gainsboro solid;
 }
-.newsA .whole-component {
+.newsA .heading {
+  width: 900px;
+  height: 50px;
+  margin: 20px;
+}
+.newsA .all-news-content {
+  height: 550px;
+  width: 95%;
+  margin: 20px;
   display: flex;
-  width: 100%;
-  height: 700px;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-.newsA .whole-component .whole-content {
+.newsA .all-news-content .news-content {
+  height: 250px;
   width: 600px;
-  height: 300px;
   background: gainsboro;
-  border-radius: 5px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
   border: 1px gainsboro solid;
-}
-.newsA .whole-component .whole-content img {
-  height: 200px;
-  width: 300px;
-  margin: 10px;
-}
-.newsA .whole-component .whole-content .psp1 {
+  margin: 2px;
   display: flex;
-  flex-direction: column;
+  border-radius: 15px;
+  overflow: auto;
 }
-.newsA .whole-component .whole-content .psp1 .sp66 {
-  font-size: 25px;
+.newsA .all-news-content .news-content .img-content {
+  height: 250px;
+  width: 300px;
+  margin: 5px;
 }
-.newsA .whole-component .whole-content .psp1 .sp67 {
-  font-size: 10px;
+.newsA .all-news-content .news-content .img-content img {
+  height: 240px;
+  width: 290px;
 }
-.newsA .whole-component .whole-content .psp1 .sp68 {
-  font-size: 15px;
+.newsA .all-news-content .news-content .all-spans {
+  height: 250px;
+  width: 300px;
+  padding: 10px;
 }
 
 .videos {
-  width: 90%;
-  height: 700px;
+  width: 95%;
+  height: auto;
   border-radius: 5px;
-  margin: 20px;
+  margin: 5px;
   padding: 20px;
   display: flex;
   overflow: auto;
   flex-wrap: wrap;
   border: 1px gainsboro solid;
 }
-.videos .whole-component3 {
-  display: flex;
+.videos .all-news-content {
+  height: auto;
   width: 100%;
-  height: 700px;
+  display: flex;
   flex-wrap: wrap;
-}
-.videos .whole-component3 .whole-content3 {
-  width: 600px;
-  height: 300px;
-  background: gainsboro;
-  border-radius: 5px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  border: 1px gainsboro solid;
-}
-.videos .whole-component3 .whole-content3 .psp3 {
-  display: flex;
-  flex-direction: column;
-}
-.videos .whole-component3 .whole-content3 .psp3 .sp76 {
-  font-size: 25px;
+  justify-content: space-around;
 }
 
 .bodyDown {
@@ -531,8 +657,432 @@
   overflow: scroll;
 }
 
+.footer {
+  height: auto;
+  width: 95%;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .nav-menu {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer .nav-menu span {
+  margin: 120px;
+}
+.footer .div-title {
+  height: auto;
+  width: 100%;
+}
+.footer .div-title #title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 120px;
+}
+.footer .main-content {
+  height: auto;
+  width: 80%;
+  border: 1px gainsboro solid;
+  display: flex;
+  border-radius: 5px;
+}
+.footer .main-content .left-part {
+  height: 400px;
+  width: 40%;
+  padding: 40px;
+}
+.footer .main-content .left-part .logo-title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.footer .main-content .left-part .phoneNumber {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .main-content .left-part .phoneNumber #pNumber {
+  font-size: 40px;
+}
+.footer .main-content .left-part .email {
+  height: 80px;
+  width: 100%;
+}
+.footer .main-content .left-part .email .logo-email {
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.footer .main-content .left-part .email #email-id {
+  margin-left: 35px;
+  font-size: 25px;
+  font-weight: 200;
+}
+.footer .main-content .right-part {
+  height: 470px;
+  width: 60%;
+  padding: 30px;
+}
+.footer .main-content .right-part .right-title {
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+}
+.footer .main-content .right-part .enter-email {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+}
+.footer .main-content .right-part .enter-email input {
+  height: 50px;
+  width: 270px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer .main-content .right-part .city {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.footer .main-content .right-part .city input {
+  height: 50px;
+  width: 270px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 10px;
+}
+.footer .main-content .right-part .discription {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer .main-content .right-part .discription input {
+  height: 90px;
+  width: 100%;
+  border-radius: 2px;
+  font-size: 20px;
+}
+.footer .main-content .right-part .choose-file {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.footer .main-content .right-part .choose-file button {
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+}
+.footer .main-content .right-part .submit {
+  height: 85px;
+  width: 100%;
+}
+.footer .main-content .right-part .submit .checkbox {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer .main-content .right-part .submit .checkbox input {
+  height: 20px;
+  width: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  background: #ff5e00;
+  color: #ff5e00;
+}
+.footer .main-content .right-part .submit .button {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .main-content .right-part .submit .button button {
+  height: 45px;
+  width: 60%;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #e46009;
+  color: white;
+}
+.footer .cardekho-content {
+  height: auto;
+  width: 80%;
+  margin: 10px;
+  border: 1px gainsboro solid;
+  border-radius: 5px;
+}
+.footer .cardekho-content .topic {
+  height: auto;
+  width: 50%;
+  padding-left: 30px;
+  display: flex;
+  align-items: end;
+}
+.footer .cardekho-content .three-content {
+  width: 100%;
+  height: auto;
+}
+.footer .cardekho-content .three-content .left-part {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  padding: 40px;
+}
+.footer .cardekho-content .three-content .left-part .first {
+  width: 30%;
+  height: 200px;
+}
+.footer .cardekho-content .three-content .left-part .first .logo-title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+.footer .cardekho-content .three-content .left-part .first .phoneNumber {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .cardekho-content .three-content .left-part .first .phoneNumber #pNumber {
+  font-size: 40px;
+}
+.footer .cardekho-content .three-content .left-part .second {
+  height: 200px;
+  width: 30%;
+  border-left: 1px gainsboro solid;
+}
+.footer .cardekho-content .three-content .left-part .second .logo-email {
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.footer .cardekho-content .three-content .left-part .second #email-id {
+  margin-left: 35px;
+  font-size: 25px;
+  font-weight: 200;
+}
+.footer .cardekho-content .three-content .left-part .third {
+  height: 200px;
+  width: 40%;
+  border-left: 1px gainsboro solid;
+}
+.footer .cardekho-content .three-content .left-part .third .dealer-logo {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .cardekho-content .three-content .left-part .third #dealer {
+  margin: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.realFooter {
+  width: 95%;
+  height: 100px;
+  border-radius: 5px;
+  border: #f0f0f0 1px solid;
+  display: flex;
+  align-items: center;
+}
+.realFooter .about-us {
+  width: 20%;
+  height: 40px;
+  padding-left: 60px;
+}
+.realFooter .contactUs {
+  width: 20%;
+  height: 40px;
+  padding-left: 60px;
+}
+.realFooter .followUs {
+  width: 60%;
+  height: 60px;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .body-footer {
   overflow: auto;
+}
+
+.head-component {
+  height: auto;
+  width: 100%;
+  background: gold;
+  padding: 50px;
+}
+.head-component .topic {
+  height: auto;
+  width: 100%;
+  background: #a00b0b;
+}
+.head-component .topic #s1 {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 5px;
+}
+.head-component .main-component {
+  height: auto;
+  width: 100%;
+  background: lemonchiffon;
+  padding: 5px;
+}
+.head-component .main-component .cars-component {
+  width: 100%;
+  height: auto;
+  background: #77915a;
+  display: flex;
+  padding: 10px;
+}
+.head-component .main-component .cars-component .left-part {
+  height: auto;
+  width: 30%;
+  padding: 15px;
+  background: #92762a;
+}
+.head-component .main-component .cars-component .left-part .left-first {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: lightgoldenrodyellow;
+}
+.head-component .main-component .cars-component .left-part .left-first .title-first {
+  height: auto;
+  width: 100%;
+  background: #0e0d0e;
+  padding: 5px;
+}
+.head-component .main-component .cars-component .left-part .left-first .title-first #pt1 {
+  font-weight: 800;
+  color: white;
+}
+.head-component .main-component .cars-component .left-part .left-first .range-slider {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  background: #44ce3f;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.head-component .main-component .cars-component .left-part .left-second {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: #49659b;
+}
+.head-component .main-component .cars-component .left-part .left-second .title-second {
+  height: auto;
+  width: 100%;
+  background: #0e0d0e;
+  padding: 5px;
+}
+.head-component .main-component .cars-component .left-part .left-second .title-second #pt2 {
+  font-weight: 800;
+  color: white;
+}
+.head-component .main-component .cars-component .left-part .left-second .content-second {
+  height: auto;
+  width: 100%;
+  background: #a8d155;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+.head-component .main-component .cars-component .left-part .left-second .content-second .clipart {
+  height: 80px;
+  width: 50%;
+  background: #bea01a;
+  padding: 5px;
+  border: 1px gainsboro solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head-component .main-component .cars-component .left-part .left-third {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: lightseagreen;
+}
+.head-component .main-component .cars-component .left-part .left-third .title-third {
+  height: auto;
+  width: 100%;
+  background: #0e0d0e;
+  padding: 5px;
+}
+.head-component .main-component .cars-component .left-part .left-third .title-third #pt3 {
+  font-weight: 800;
+  color: white;
+}
+.head-component .main-component .cars-component .left-part .left-third .content-third {
+  height: auto;
+  width: 100%;
+  background: #a8d155;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+.head-component .main-component .cars-component .left-part .left-third .content-third .clipart2 {
+  height: 60px;
+  width: 40%;
+  background: #bea01a;
+  padding: 5px;
+  border: 1px gainsboro solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.head-component .main-component .cars-component .right-part {
+  height: auto;
+  width: 70%;
+  padding: 15px;
+  background: #4bb34b;
 }
 
 .home {

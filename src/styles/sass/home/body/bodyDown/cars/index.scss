@@ -1,5 +1,5 @@
 .cars{
-    height: 200px;
+    height: 280px;
     width: 97%;
     border: 1px rgb(220, 220, 220) solid;
     margin: 10px;
@@ -7,7 +7,7 @@
     padding-left: 20px;
     padding: 10px;
     margin: 5px;
-   
+
  
     .s2{
         font-size: 25px;
@@ -20,20 +20,36 @@
    }
 
     .latest-cars{
-        
+      
         width: 100%;
-        height: 80%;
+        height: 150px;
         overflow-x:scroll;
         display: flex;
         
-        
-        img{
-            
+        .vehicle-content{
+    
             height: 140px;
-            min-width: 200px;
-            border: 1px rgb(220, 220, 220) solid;
+            width: 180px;
+            margin: 3px;
             border-radius: 5px;
-            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border:  1px rgb(220, 220, 220) solid;
+
+
+            img{
+                height: 80px;
+                width: 160px;
+                margin-bottom:10px ;
+            }
+
+            #s1{
+                color: green;
+            }
         }
-    }
+       
+     
+  }
 }

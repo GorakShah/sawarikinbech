@@ -1,4 +1,7 @@
 import React from 'react';
+import usedOne from '../../../../../common/usedOne';
+import { Tab, Tabs } from "@blueprintjs/core";
+
 import A3 from './state-picture/arizona.jpg';
 import B3 from './state-picture/california.jpg';
 import C3 from './state-picture/georgia.jpg';
@@ -10,61 +13,85 @@ import G3 from './state-picture/texas.jpg';
 
 class LeftPart extends React.Component{
 
+    constructor(props){
+      super(props);
+      this.state={
+          data:[{stateName:'california', stateImage:A3 },
+                {stateName:'california', stateImage:B3 },
+                {stateName:'california', stateImage:C3 },
+                {stateName:'california', stateImage:D3 },
+                {stateName:'california', stateImage:E3},
+                {stateName:'california', stateImage:F3 },
+                {stateName:'california', stateImage:G3 },
+
+                ],
+          
+         carsData:[
+            {stateName:'california', stateImage:E3},
+            {stateName:'california', stateImage:F3 },
+            {stateName:'california', stateImage:G3 },
+         ],
+
+         bikesData:[
+            {stateName:'california', stateImage:B3 },
+            {stateName:'california', stateImage:C3 },
+            {stateName:'california', stateImage:D3 },
+            {stateName:'california', stateImage:E3},
+                   ],
+
+         scootersData:[
+            {stateName:'california', stateImage:A3 },
+            {stateName:'california', stateImage:B3 },
+            {stateName:'california', stateImage:C3 },
+                      ],
+
+
+      }
+    }
+
+    carsPanel(){
+        return(
+          <div className='all-content'>
+                   {this.state.carsData.map(usedOne)}
+                 </div>
+        )
+      }
+  
+      bikesPanel(){
+        return(
+          <div className='all-content'>
+                   {this.state.bikesData.map(usedOne)}
+                 </div>
+        )
+      }
+  
+  
+      scootersPanel(){
+        return(
+          <div className='all-content'>
+                   {this.state.scootersData.map(usedOne)}
+                 </div>
+        )
+      }
+  
+      handleTabChange=(tabid)=>{
+        this.setState({tabid:tabid})
+      }
+  
+
     render(){
         return(
             <div className='leftPart'>
-                <div>
+                
                      <span className='s2'>Used</span>
-                    <div>
-                        <span className='s3'>Cars</span>
-                        <span className='s3'>Bikes</span>
-                        <span className='s3'>Scooters</span>
-                    </div>
-                </div>
-            
+                     
                 <div className='state-pics'>
-                    <div className='a11'>
-                     <img src={A3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 1</span>
-                    </div>
-                    
-                    <div className='a11'>
-                     <img src={B3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 2</span>
-                    </div>
+                    <Tabs id="TabsExample" onChange={this.handleTabChange} selectedTabId={this.state.tabid}>
 
-                    <div className='a11'>
-                     <img src={C3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 3</span>
-                    </div>
-
-                    <div className='a11'>
-                     <img src={D3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 4</span>
-                    </div>
-                    
-                    <div className='a11'>
-                     <img src={E3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 5</span>
-                    </div>
-
-                    <div className='a11'>
-                     <img src={F3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 6</span>
-                    </div>
-
-                    <div className='a11'>
-                     <img src={G3}/>
-                     <span className='l11'>Used Vehicle in State</span>
-                     <span>State 7</span>
-                    </div>
-
+                        <Tab id="ng" title="cars" panel={this.carsPanel()} />
+                        <Tab id="mb" title="bikes" panel={this.bikesPanel()} panelClassName="ember-panel" />
+                        <Tab id="rx" title="scooters" panel={this.scootersPanel()} />
+                    </Tabs>
                 </div>
             </div>
         )

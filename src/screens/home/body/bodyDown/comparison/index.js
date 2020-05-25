@@ -2,77 +2,41 @@ import React from 'react';
 import Corolla from './corolla.jpg';
 import Prius from './toyata-prius.jpg';
 
-class Comparison extends React.Component{
+import vehicleComparison from '../../../../common/vehicleComp';
+
+class CarComparison extends React.Component{
+ 
+    constructor(props){
+      super(props);
+        this.state={data:[ [{carName:'toyata corolla' ,price:'$20,000', carImage:Corolla}, 
+                            {carName:'toyota prius' ,price:'$20,000', carImage:Prius}
+                            ],
+                            
+                            [{carName:'toyata venza' ,price:'$21,000', carImage:Corolla}, 
+                             {carName:'toyota yaris' ,price:'$21,000', carImage:Prius}
+                            ],
+
+                            [{carName:'toyata camry' ,price:'$22,000', carImage:Corolla}, 
+                             {carName:'toyota avalon' ,price:'$22,000', carImage:Prius}
+                            ],
+
+                            [{carName:'toyata rav4' ,price:'$23,000', carImage:Corolla}, 
+                             {carName:'toyota camry awd' ,price:'$23,000', carImage:Prius}
+                            ]
+                        ]
+                    }
+
+    }
+     
+ 
 
     render(){
         return(
-            <div className="compare">
+            <div className="car-compare">
               <span className='title'>Popular Car Comparisons</span>
                   
-              <div className='all-in-one'>
-              <div className='whole-content'>
-              <div className='two-image'>
-                  <img src={Corolla}/>
-                  <img src={Prius}/>
-              </div>
-              <div>
-                      <span className='sp33'>Toyota corolla </span>
-                      <span>Vs</span>
-                      <span className='sp33'>Toyota prius</span>
-                      <div className='price'>
-                          <span className='sp44'>$ 21,000</span>
-                          <span className='sp45'>$ 21,000</span>
-                      </div>
-              </div>
-          </div>
-                    
-                    <div className='whole-content'>
-                        <div className='two-image'>
-                            <img src={Corolla}/>
-                            <img src={Prius}/>
-                        </div>
-                        <div>
-                                <span className='sp33'>Nissan Altima</span>
-                                <span>Vs</span>
-                                <span className='sp33'>Nissan Versa</span>
-                                <div className='price'>
-                                    <span className='sp44'>$ 19,000</span>
-                                    <span className='sp45'>$ 19,000</span>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div className='whole-content'>
-                    <div className='two-image'>
-                        <img src={Corolla}/>
-                        <img src={Prius}/>
-                    </div>
-                    <div>
-                            <span className='sp33'>Honda Civic </span>
-                            <span>Vs</span>
-                            <span className='sp33'>Honda Accord</span>
-                            <div className='price'>
-                                <span className='sp44'>$ 17,000</span>
-                                <span className='sp45'>$ 17,000</span>
-                            </div>
-                    </div>
-                </div>
-
-                <div className='whole-content'>
-                <div className='two-image'>
-                    <img src={Corolla}/>
-                    <img src={Prius}/>
-                </div>
-                <div>
-                        <span className='sp33'>Maruti Xl5 </span>
-                        <span>Vs</span>
-                        <span className='sp33'>Maruti X-Presso</span>
-                        <div className='price'>
-                            <span className='sp44'>$ 6,000</span>
-                            <span className='sp45'>$ 6,000</span>
-                        </div>
-                </div>
-            </div>
+              <div className='all-one'>
+                   {this.state.data.map(vehicleComparison)}
               </div>
 
               
@@ -80,4 +44,4 @@ class Comparison extends React.Component{
         )
     }
 }
-export default Comparison;
+export default CarComparison;

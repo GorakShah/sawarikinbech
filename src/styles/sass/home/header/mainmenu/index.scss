@@ -10,4 +10,35 @@
     font-size: 20px;
     border-top:rgb(240, 240, 240) 1px solid;
     
+    span:hover{
+        color:red;
+        cursor: pointer;
+    }
+   
+   
+    
+}
+
+
+    
+.all-lists{
+         height: auto;
+         width: auto;  
+         border: rgb(240, 240, 240) 1px solid ;
+         border-radius: 5px;
+         
+
+    .list1{
+        height: 40px;
+        width: 240px;
+        padding: 10px;
+        border-bottom:rgb(240, 240, 240) 1px solid ;
+       cursor: pointer;
+        
+       
+       
+    }
+    .list1:hover{
+        background:rgb(240, 240, 240) ;
+    }
 }

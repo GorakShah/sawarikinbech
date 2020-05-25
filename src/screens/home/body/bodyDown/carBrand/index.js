@@ -10,33 +10,65 @@ import Nissan from './nissanlogo.png';
 import Teslalogo from './teslalogo.jpg';
 import Cherolet from './cherolet.png';
 
-
+import brandCard from '../../../../common/brandCard';
 
 
 
 
 class CarBrand extends React.Component{
 
+  constructor(props){
+    super(props);
+    this.state={data:[
+      {brandName:'acura', brandimage:Acuralogo},
+      {brandName:'bmw', brandimage:Bmwlogo},
+      {brandName:'cherolet', brandimage:Cherolet},
+      {brandName:'honda', brandimage:Hondalogo},
+      {brandName:'hyndai', brandimage:Hyuddailogo},
+      {brandName:'infinity', brandimage:Infinitylogo},
+      {brandName:'mazada', brandimage:Mazda},
+      {brandName:'nissan', brandimage:Nissan},
+      {brandName:'toyota', brandimage:ToyataLogo},
+      {brandName:'tesla', brandimage:Teslalogo}
+    ]}
+  }
+
+    
+
     render(){
         return(
             <div className='carBrand'>
               <span className='span1'>Popular Car Brands</span>
               <div className='popular-car-brand'>
-                <img src={Acuralogo} />
-                <img src={Bmwlogo}/>
-                <img src={Hondalogo}/>
-                <img src={ToyataLogo}/>
-                <img src={Infinitylogo}/>
-                <img src={Hyuddailogo}/>
-                <img src={Mazda}/>
-                <img src={Nissan}/>
-                <img src={Teslalogo}/>
-                <img src={Cherolet}/>
-
-               
+                {this.state.data.map(brandCard)}
               </div>
             </div>
         )
     }
 }
+
+
+
+ 
  export default CarBrand ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

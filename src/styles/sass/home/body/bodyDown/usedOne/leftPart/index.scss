@@ -8,42 +8,39 @@
         margin: 5px;
     }
 
-    .s3{
-        font-size: 15px;
-        margin: 10px;
-    }
+   
     
     .state-pics{
-        height: 100%;
-        width: auto;
+        height: 300px;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
+        overflow-x: auto;
+        justify-content: start;
+        align-items: center;
         padding: 30px;
-    
         
-
-        .a11{
-            height: 190px;
-            width: 160px;
-            
+    
+        .all-content{
+            height: 180px;
+            width: 190px;
+            margin: 3px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: end;
+            align-items: center;
+            border:  1px rgb(220, 220, 220) solid;
             border-radius: 5px;
-            border: 1px rgb(220, 220, 220) solid;
-            margin: 5px;
 
             img{
-                height: 70%;
-                width: 80%;
-                border-radius: 50%;
-
-            }
-            .l11{
-                font-size: 10px;
+                height: 120px;
+                width: 150px;
+                border-radius: 100%;
             }
         }
+
+       
     }
 
 }
